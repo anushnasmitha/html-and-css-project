@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+button,
+span {
+    font-family: "Oswald", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* .navabar */
+.navabar {
+    padding: 0 40px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: purple;
+}
+
+.navabar.bugger {
+    display: none;
+}
+
+.navabar logo {
+    font: size 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navabar.logo img {
+    width: 5px;
+    height: 5px
+}
+
+.navabar.logoh3 {
+    font-size: 22px;
+}
+
+.navabar.logoh3 {
+    color: brown;
+    font-weight: 400px;
+}
+
+.navabar .menu .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navabar .menu .nav-links {
+    font-size: 16px;
+    color: aliceblue;
+}
+
+@media(max-width900px) {
+    .navabar.menu {
+        display: none;
+    }
+
+    .navabar.bugger {
+        display: block;
+    }
+
+    .navabar.bugger div {
+        background-color: antiquewhite;
+        height: 5px;
+        width: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+/* hero section */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url("./waterfalls-waterfall-foliage-nature-wallpaper-preview.png");
+    background-size: cover;
+    background-position: center;
+    display: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .content {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero .content h3 {
+    color: azure;
+    font-size: 20px;
+}
+
+.hero .content h1 {
+    font-size: 20px;
+    color: #000;
+}
+
+@media(max-width:700ph) {}
+
+/* about section */
+.about {
+    background-color: bisque;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about h2 {
+    font-size: 50px;
+    color: black;
+}
+
+.about .about-container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.about .about-container h3 {
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
+}
+
+/* services section */
+.services {
+
+    display: flex;
+    background-color: rgb(50, 54, 54);
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.services h2 {
+    font-size: 40px;
+    color: rgb(17, 154, 99);
+}
+
+.services .services-container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.services .services-container .services-card {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.services .services-container .services-card1 {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.services .services-container .services-card2 {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.services .services-container .services-card3 {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+
+.services .services-container .services-card1 .img-1 {
+    width: 200px;
+    height: 200px;
+}
+
+.services .services-container .services-card2 .img-2 {
+    width: 200px;
+    height: 200px;
+}
+
+.services .services-container .services-card3 .img-3 {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* project */
+.projects {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: rgb(236, 212, 212);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 150px 0;
+    gap: 100px;
+}
+
+.projects h1 {
+    font-size: 30px;
+    color: rgb(125, 11, 74);
+}
+
+.projects .project-card {
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    /* flex-direction: column; */
+    gap: 20px;
+}
+
+.projects .project-card .project-card1 h3 {
+    font-size: 15px;
+}
+
+.projects .project-card .project-card1 h3 {
+    font-size: 15px;
+}
+
+.projects .project-card .project-card2 h3 {
+    font-size: 15px;
+}
+
+.projects .project-card .project-card3 h3 {
+    font-size: 15px;
+}
+
+.projects .project-card .project-card4 h3 {
+    font-size: 15px;
+}
+
+.projects .project-card1 .img {
+    width: 180px;
+    height: 180px;
+}
+
+
+.projects .project-card1 .img-1 {
+    width: 180px;
+    height: 180px;
+}
+
+.projects .project-card2 .img-2 {
+    width: 180px;
+    height: 180px;
+}
+
+.projects .project-card3 .img-3 {
+    width: 180px;
+    height: 180px;
+}
+
+.projects .project-card4 .img-4 {
+    width: 180px;
+    height: 180px;
+}
+
+
+.footer .top-footer h2 span {
+    display: block;
+}
+
+.footer .top-footer h3 {
+    font-size: 30px;
+    color: aliceblue;
+}
+
+
+
+.footer .phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.footer .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.footer .top-footer .contact-img {
+    width: 500px;
+    height: 400px;
+} */
+.footer {
+    width: 100%;
+    height: auto;
+}
+
+.footer .top-footer {
+    display: flex;
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.footer.top-footer.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+.footer .top-footer .content .phone .img1 {
+    width: 50px;
+    height: 50px;
+}
+
+.footer .top-footer .content .email .img2 {
+    width: 50px;
+    height: 50px;
+}
+
+.footer.bottom-footer {
+    border-top: rgb(134, 129, 129);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
